@@ -1,0 +1,275 @@
+/* Hoja de estilo indivual en CSS III */
+
+/* Desarrollado por Nelson Alexander Brizuela Ramírez */
+
+/* Fecha de creación: 24/09/2020 */
+
+
+/* Fondo general del sitio */
+
+body {
+
+  background-image: url("../Images/screen.jpg");
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+   
+  background-size: cover; 
+
+}
+
+#caption {
+
+  color: rgb(0, 0, 0);
+
+}
+
+#sub1{
+
+  color: rgb(255, 255, 255);
+
+}
+
+#idinsumoadd{
+
+  visibility: hidden;
+
+}
+
+#idinsumo{
+
+  display: none;
+
+}
+
+#actions{
+
+  color: rgb(0, 0, 0);
+
+}
+
+
+/* Divisiones y texto */
+
+div {
+
+  border-radius: 10px;
+
+}
+
+
+#header {
+
+  border-radius: 10px;
+
+}
+
+#table {
+
+  border-radius: 10px;
+
+}
+
+#middle {
+
+  border-radius: 10px;
+
+  background-color: rgb(255, 255, 255);
+
+}
+
+h1, h2, p, h6, h3, h5, .row {
+
+  font-family: "Century Gothic"; 
+}
+
+#recovery {
+
+  font-family: "Century Gothic"; 
+
+  color: rgb(134, 132, 132);
+
+  font-style: italic;
+
+  text-decoration: underline;
+
+
+}
+
+#check {
+
+  font-family: "Century Gothic"; 
+
+}
+
+#ann {
+
+  color: rgb(255, 255, 255);
+}
+
+#usuario {
+
+ border: 0;
+    
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+    
+  outline: 0 none;
+
+}
+
+#clave {
+
+  border: 0;
+    
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+    
+  outline: 0 none;
+
+}
+
+ul {
+
+  justify-content: flex-start;
+}
+
+/* Barra de navegación */
+
+#nav,  #nombre, #dato{
+
+  font-family: "Century Gothic";
+
+  background-color: rgba(0, 0, 0, 0);
+
+  color: rgb(0, 0, 0);
+
+}
+
+#logo {
+
+  font-family: "Freestyle Script";
+
+  color: rgb(0, 0, 0);
+}
+
+#logo2 {
+
+  font-family: "Freestyle Script";
+
+  color: rgb(27, 14, 212);
+}
+
+/* Pié del sitio */
+
+.site-footer{
+
+  background-color: rgba(255, 255, 255, 0.801);
+
+  padding: 45px 0 20px;
+
+  font-size: 15px;
+
+  line-height: 24px;
+
+  color: #000000;
+
+}
+
+.site-footer hr
+{
+  border-top-color:#bbb;
+
+  opacity: 0;
+
+}
+
+.site-footer hr.small {
+
+  margin: 20px 0
+
+}
+
+.site-footer h6 {
+
+  color:rgb(0, 0, 0);
+
+  font-size:16px;
+
+  text-transform: uppercase;
+
+  margin-top:5px;
+
+  letter-spacing:2px
+}
+
+.site-footer a
+{
+     
+  color:#737373;
+
+}
+.site-footer a:hover
+{
+
+  color:#3366cc;
+
+  text-decoration:none;
+
+}
+
+.footer-links {
+
+  padding-left:0;
+
+  list-style:none
+
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+
+
+

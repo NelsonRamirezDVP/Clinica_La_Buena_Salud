@@ -1,0 +1,611 @@
+<!-- Estructura HTML para el inicio de sesión del sistema de control de una clínica de laboratorios -->
+
+<!-- Versión 1.0 (Prototipo) -->
+
+<!-- Desarrollado Tech Solutions(R) 2021(C) (Proyecto dirigido por Nelson Alexander Brizuela Ramírez) -->
+
+
+<!-- Archivo de plantilla de la página de inicio de sesión (Versión de archivo 1.0) -->
+
+<!DOCTYPE html>
+
+<html lang = "es">
+
+<!-- Inicio de la estructura web -->
+
+<head>
+
+  <meta charset = "UTF-8">
+
+  <meta name = "description" content = "Inicio de sesión para el control de inventarios y de nómina de empleados de la Farmacia Saint John S.A. de C.V."/>
+
+  <meta name ="Farmacia Saint John (Versión 1)" content = "Plantilla de inicio de sesión">
+
+  <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+  <!-- Integración de Bootstrap (Framework Front End) -->
+
+  <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- Integración de icono (Favicon) -->
+
+  <link rel = "shortcut icon" href = "Assets/Icons/icon.png">
+
+  <!-- Integración de hoja de estilos personalizada (CSS III) -->
+    
+  <link rel = "stylesheet" href = "Assets/CSS/fsjstyle.css">
+    
+  <title>¡Inicia sesión!</title>
+	
+</head>
+
+<!-- Cuerpo de la página web -->
+
+<body>
+
+
+<!-- Inicio de la barra de navegación simple para la página de inicio de sesión -->
+
+<nav id = "nav" class = "navbar sticky-top navbar-expand-lg navbar-light "  style = "background-color: rgb(255, 255, 255)">
+  
+  <a class = "navbar-brand" href = "login.html">
+
+    <img src = "Assets/Images/cross.png" width = "60" height = "60">
+
+  </a>
+
+  <h1 id = "logo">Clínica La Buena Salud</h1>
+ 
+  <div class = "collapse navbar-collapse" id = "navbarText">
+
+    <ul class = "navbar-nav mr-auto">
+
+        <li class = "nav-item active">
+
+          <a class = "nav-link" href="#"></a>
+
+        </li>
+
+        <li class = "nav-item">
+
+          <a class = "nav-link" href = "#"></a>
+
+        </li>
+
+        <li class = "nav-item">
+
+          <a class = "nav-link" href ="#"></a>
+
+        </li>
+
+    </ul>
+
+    <span class = "navbar-text">
+
+    <h4 id = "nombre"><strong>Tu salud es primero.</strong></h4>
+
+    </span>
+
+  </div>
+
+</nav>
+
+<!-- Encabezado de la página web -->
+
+<br>
+
+<br>
+
+<br>
+
+<header><center>
+
+  <div id = "header" class = "container" style = "background-color: rgba(255, 255, 255, 0.801);">
+
+    <br>
+
+    <div id = "middle" class = "container">
+
+      <br>
+
+      <h1><strong>¡Bienvenido al servicio de control de datos!</strong></h1>
+
+      <br>
+
+      <h5>Puedes administrar y realizar un seguimiento de los recursos y actividades de la clínica de laboratorios.</h5>
+
+      <br>
+
+      <h5><strong>Versión 2.3</strong></h5>
+
+      <br>
+
+    </div>
+
+    <br>
+
+    <div class = "container">
+
+    <div class = "row text-dark">
+
+      <div class = "col-sm">
+
+        <h5><strong>Gestiona con seguridad</strong></h5>
+
+        <svg width = "2.75em" height = "3.75em" viewBox = "0 0 16 16" class = "bi bi-shield-fill-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        
+          <path fill-rule = "evenodd" d = "M8 .5c-.662 0-1.77.249-2.813.525a61.11 61.11 0 0 0-2.772.815 1.454 1.454 0 0 0-1.003 1.184c-.573 4.197.756 7.307 2.368 9.365a11.192 11.192 0 0 0 2.417 2.3c.371.256.715.451 1.007.586.27.124.558.225.796.225s.527-.101.796-.225c.292-.135.636-.33 1.007-.586a11.191 11.191 0 0 0 2.418-2.3c1.611-2.058 2.94-5.168 2.367-9.365a1.454 1.454 0 0 0-1.003-1.184 61.09 61.09 0 0 0-2.772-.815C9.77.749 8.663.5 8 .5zm2.854 6.354a.5.5 0 0 0-.708-.708L7.5 8.793 6.354 7.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+
+        </svg>
+      
+      </div>
+
+      <div class = "col-sm">
+      
+        <h5><strong>Administra datos importantes</strong></h5>
+
+        <svg width = "2.75em" height = "3.75em" viewBox = "0 0 16 16" class = "bi bi-server" fill = "currentColor" xmlns = "http://www.w3.org/2000/svg">
+        
+          <path fill-rule = "evenodd" d = "M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4C14.665 5.474 11.68 6.667 8 6.667 4.318 6.667 1.333 5.473 1.333 4V2.667zm0 3.667v3C1.333 10.805 4.318 12 8 12c3.68 0 6.665-1.193 6.667-2.665V6.334c-.43.32-.931.58-1.458.79C11.81 7.684 9.967 8 8 8c-1.967 0-3.81-.317-5.21-.876a6.508 6.508 0 0 1-1.457-.79zm13.334 5.334c-.43.319-.931.578-1.458.789-1.4.56-3.242.876-5.209.876-1.967 0-3.81-.316-5.21-.876a6.51 6.51 0 0 1-1.457-.79v1.666C1.333 14.806 4.318 16 8 16s6.667-1.194 6.667-2.667v-1.665z"/>
+
+        </svg>
+
+        <br>
+        
+      </div>
+
+      <div class = "col-sm">
+
+        <h5><strong>Obten reportes</strong></h5>
+
+        <svg width = "2.75em" height = "3.75em" viewBox = "0 0 16 16" class = "bi bi-person-check-fill" fill="currentColor" xmlns = "http://www.w3.org/2000/svg">
+        
+          <path fill-rule = "evenodd" d = "M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9.854-2.854a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+
+        </svg>
+
+      </div>
+
+    </div>
+
+    <br>
+    
+  </div>
+
+</header></center>
+
+  <br>
+
+  <br>
+
+</div>
+
+<br>
+
+<br>
+
+<!-- Contenedor para el formulario de ingreso -->
+
+<form id = "frmlogin">
+  
+  <center><div class = "container col-4 text-dark" style = "background-color: rgba(255, 255, 255, 0.801);">
+
+    <div class="col">
+
+      <br>
+
+      <h1><strong>¡Inicia sesión!</strong></h1>
+
+    </div>
+
+    <br>
+
+    <!-- Formulario de ingreso para el nombre de usuario -->
+
+    <div class = "col-8">
+
+      <input type = "text" id = "txtusuario" name = "txtusuario" class = "form-control" style = "background-color: rgba(255, 255, 255, 0.288);" placeholder = "Ingrese su usuario aquí..." _mstplaceholder = "868153">
+
+    </div>
+
+    <br>
+
+    <!-- Formulario de ingreso para la clave de acceso -->
+
+    <div class = "col-8">
+
+      <input type = "password" id = "txtclave" name = "txtclave" class = "form-control" style = "background-color: rgba(255, 255, 255, 0.288);" placeholder="Ingresa tu contraseña aquí..." _mstplaceholder = "182013">
+
+    </div>
+
+    <br>
+
+
+    <!-- Botón de inicio de sesión -->
+
+    <div class = "col-6">
+
+      <br>
+
+      <button class = "btn btn-lg btn-primary" name = "iniciar" value = "start" type = "submit" id = "iniciar"_msthash = "469664" _msttexthash = "234910"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+        
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      
+      </svg>
+            
+      </button>
+
+      <br>
+
+      <br>
+
+      <a href="relogin.php" id = "recovery">¿Has olvidado tus credenciales?</a>
+
+    </div>
+        
+  <!-- Final del formulario de inicio de sesión -->
+
+</form>
+
+  <br>
+
+  <br>
+
+</div></center>
+
+<br>
+
+<br>
+
+<!-- Alerta para los inicios de sesión o problemas relacionados a la petición de AJAX-->
+
+<center><div id = "resultado" class = "col-6 alert alert-dismissible fade show" role = "alert">
+
+</div></center>
+
+<br>
+
+</body>
+
+<!-- Final del cuerpo de la página -->
+
+<!-- Contenedor de pié para el servicio web (Footer informativo y de enlaces) -->
+
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-12 col-md-6">
+
+          <h6><strong>ACERCA DE...</strong></h6>
+
+          <p class="text-justify">Sistema designado al mantenimiento y control de una clínica especializada en la realización de laboratorios.</p>
+        
+          <p class="text-justify">Versión 2.3</p>
+        
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+
+          <h6><strong>¿NECESITAS AYUDA?</strong></h6>
+
+          <ul class="footer-links">
+
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+              
+              <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            
+            </svg> 7756-5656 (Regencia)</a></li>
+
+           <br>
+
+            <li><a href="condiciones.html">  Condiciones de uso        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-fill" viewBox="0 0 16 16">
+              
+              <path d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+            
+            </svg></a></li>
+
+            <br>
+
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+              
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+
+            </svg>  Calle Juan José Cañas entre Calle #85 y #83 de la Av. Sur #421</a></li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <hr>
+
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-8 col-sm-6 col-xs-12">
+
+          <p class="copyright-text"><h6><strong>DERECHOS RESERVADOS</strong></h6>
+
+            <h6><strong>NELTECH ©2021</strong></h6>
+
+          </p>
+
+        </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+</footer>
+
+</div>
+
+
+<!-- Integración de librerías de JavaScript (JQuery y JPopper) -->
+
+<script src = "https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<script src = "https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.js"></script>
+
+<script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.js"></script>
+
+<script src = https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/additional-methods.js></script>
+
+<script src = https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js></script>
+ 
+<script src = "Assets/JS/sha512.js" type = "text/javascript"></script>
+
+
+<!-- Script de validación a través de JQuery Validation -->
+
+<script>
+
+  //Si se ha enviado información a la página//
+
+  $(document).ready
+  (
+    function()
+    {
+      //Se procede a realizar el conjunto de validaciones para el formulario//
+
+      $("#frmlogin").validate
+      (
+
+        //Se crean las reglas de validación//
+
+        {
+
+          rules:
+          {
+
+            //Para el campo de ingreso de usuarios//
+
+            txtusuario:
+            {
+              
+              required: true,
+
+            },
+
+            //Para el campo de ingreso de contraseñas//
+
+            txtclave:
+            {
+              
+              required: true,
+
+            }
+
+          },
+
+          //Especificando los mensajes a mostrar el usuario en las validaciones de los campos
+
+          messages:
+          {
+
+            //Para el campo de ingreso de usuarios//
+
+            txtusuario:
+            {
+              
+              required: "<br>¡No olvides ingresar tu usuario!",
+
+            },
+
+            //Para el campo de ingreso de contraseñas//
+
+            txtclave:
+            {
+              
+              required: "<br>¡Debes ingresar tu contraseña!",
+
+            }
+
+          },
+
+
+          //Manejando errores al realizar la validación//
+
+          errorElement: "em",
+
+          errorPlacement: function(error, element)
+          {
+
+            error.addClass("form-alert text-primary")
+
+            error.insertAfter(element);
+
+          },
+
+
+          //Creando un submit para aceptar los errores//
+
+          submitHandler: function()
+          {
+
+            //Si todos los datos cumplen con las validaciones se envían a la función login()//
+
+            login();
+
+          }
+
+        }
+
+      );
+
+      //Implementando AJAX para el envío de los datos de inicio de sesión y contraseña encriptada en SHA 512(login())//
+
+      //Encriptando los datos en SHA512//
+
+      function login()
+      {
+
+        /* Creando variable para almacenar el valor del cajón de texto de la contraseña/clave (txtclave) y del usuario//
+
+        var usuario = $("#txtusuario").val();
+
+        var clave = $("#txtclave").val();
+
+        //Entregando el valor de la variable a la función de encriptación//
+
+        var hashObj = new jsSHA(clave, "ASCII");
+
+        //Encriptación de una nueva clave a partir de los objetos anteriores//
+
+        var newclave = hashObj.getHash("SHA-512", "HEX");
+
+        //Cambiando el valor del cajón de texto a la contraseña encriptada//
+
+        $("#txtclave").val(newclave);
+
+        //Comprobando el valor del usuario y de la nueva clave previamente encriptada en SHA 512  a través de la consola del navegador */
+
+        //console.log(usuario, newclave);//
+
+
+        //Implementación de AJAX//
+
+        $.ajax(
+          
+          {
+
+            //Métodos y valores para AJAX//
+
+            url: "login.php",
+
+            type: "POST",
+
+            dataType: "html",
+
+            data: $("#frmlogin").serialize(),
+
+            //En caso de haber realizado un inicio de sesión exitoso//
+
+            success: function(respuesta)
+
+            {
+
+              //Limpiando la variable de respuesta//
+
+              var acceso = $.trim(respuesta);
+
+              if(acceso === "exito")
+              {
+
+                //Si hay un acceso exitoso al revisar la base de datos//
+
+                $("#resultado").html('<svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-exclamation-diamond" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/><path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/></svg><strong>  ¡Has iniciado sesión correctamente!</strong><br> Bienvenido.');
+
+                //Agregando la clase "success" en caso de un inicio exitoso//
+
+                $("#resultado").addClass("alert-success");
+
+                //Mostrando alerta en caso de un inicio exitoso//
+
+                $("#resultado").show();
+
+                //Redireccionando en caso de un acceso exitoso a la página principal//
+
+                //Ubicando un temporizador para apreciar el mensaje de alerta y posteriormente enviar a la página principal//
+
+                setTimeout(function () 
+                {
+                  //Dirigiendo a página principal//
+                  
+                  location.href = "index.php";
+                            
+                }, 3500);
+
+                //Emitiendo en la consola el estado actual del acceso//
+
+                console.log(respuesta);
+
+              }
+
+              else if(acceso === "fracaso")
+              {
+                //Si hay un acceso fallido al revisar la base de datos//
+
+                $("#resultado").html('<svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-exclamation-diamond" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/><path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/></svg><strong>  ¡Se han ingresado credenciales no válidas!</strong> Por favor reintenta.');
+
+                //Agregando la clase "danger" en caso de un inicio fallido//
+
+                $("#resultado").addClass("alert-danger");
+
+                //Mostrando alerta en caso de un inicio exitoso//
+
+                $("#resultado").show();
+
+                //Emitiendo a la consola el estado de acceso actual//
+
+                console.log(acceso);
+              }
+
+            },
+
+            //En caso de haber un error de conexión o en la petición AJAX//
+
+            error: function(error)
+            {
+
+              $("#resultado").html('<svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-exclamation-diamond" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/><path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/></svg><strong>  ¡Se ha presentado un error inesperado!</strong><br> Detalles: ' + error.statusText);
+
+              //Agregando la clase "danger" en caso de algún mensaje de error//
+
+              $("#resultado").addClass("alert-danger");
+
+              //Mostrando alerta en caso de un inicio fallido//
+
+              $("#resultado").show();
+
+            }
+
+          }  
+          
+        );
+
+      }
+
+    }
+
+  )
+
+</script>
+    
+</html>
+
+<!-- Final de la estructura de la página web de proceso de datos -->

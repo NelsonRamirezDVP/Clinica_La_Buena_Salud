@@ -1,0 +1,494 @@
+<!-- Estructura HTML para el formulario de ingreso de examenes de lboratorio -->
+
+<!-- Versión 1.0 (Prototipo) -->
+        
+<!-- Desarrollado Tech Solutions(R) 2021(C) (Proyecto dirigido por Nelson Alexander Brizuela Ramírez) -->
+        
+        
+<!--Formulario de ingreso de productos (Versión de archivo 1.0) -->
+
+<!DOCTYPE html>
+
+<html lang = "es">
+
+<!-- Inicio de la estructura web -->
+
+<head>
+
+    <meta charset = "UTF-8">
+
+    <meta name = "description" content = "Control de datos para las categorías de la empresa."/>
+
+    <meta name = "keywords" content = "datos, control, base, insertar, eliminar, consulta, actualizar, empresa, categorías"/>
+
+    <meta name="Nelson Alexander Brizuela Ramírez" content="Control de datos en la base de datos 'empresa' tabla 'Categorias'.">
+
+    <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Integración de icono (Favicon) -->
+
+    <link rel = "shortcut icon" href = "Assets/Icons/icon.png">
+
+    <!-- Integración de Bootstrap (Framework Front End) -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Integración de hoja de estilos personalizada (CSS III) -->
+    
+    <link rel="stylesheet" href="Assets/CSS/fsjstyle.css">
+
+    <link rel="stylesheet" href="Assets/CSS/fonts.css">
+    
+    <title>Agrega un examen</title>
+	
+</head>
+
+<!-- Cuerpo de la página web -->
+
+
+<!-- Inicio de la barra de navegación (etqueta de sustitución donde se da el contenido en nav.html) -->
+    
+--nav--
+
+<!-- Encabezado de la página web -->
+
+<body>
+
+<br>
+
+</div>
+
+<!-- Contenedores para la muestra de los datos de la tabla categorias -->
+
+    <center><div class = "container p-3 my-3 text-dark" style = "background-color: rgba(255, 255, 255, 0.801);">
+        
+        <br>
+    
+        <h2>ADICIÓN DE UN NUEVO EXAMEN DE LABORATORIO</h2>
+
+        <br>
+
+        <div class = "container p-3 my-3 bg-light text-dark" style = "background-color: #ffffffdc;">
+            
+            <h6>Tienes a disposición el siguiente formulario para poder crear un nuevo registro acerca de un examen que vaya a estar disponible. Ingresa la información solicitada y cuando estés listo presiona el botón "Añadir nuevo registro".</h6>
+            
+        </div>
+
+</div></center>
+
+<br>
+
+<div class = "container p-3 my-3" style = "background-color: rgba(255, 255, 255, 0.247);">
+
+        <div class="container">
+
+            <div class="row">
+
+              <div class="col-sm">
+
+                <form class = "form-inline" method = "POST">
+
+                    <div class = "form-group">
+                
+                        <div class = "container p-3 my-3 text-dark" style = "background-color: #ffffffdc ;" id = "idinsumoadd">
+                
+                            <p><strong>ID del examen</strong></p>
+                            
+                            <!-- Entrada de un cajón numérico para el ID del insumo -->
+                
+                            <center><div>
+
+                                <input size="10" maxlength="10" type = "number" style = "background-color: #000000d0;" class = "form-control text-light" id = "idinsumoadd" placeholder = "Ingresa un número">
+                              
+                            </div></center>
+                
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm">
+
+                        <center>
+
+                        <!-- Icono de señalización para las alertas -->
+
+                        <svg width="4.0625em" height="4em" viewBox="0 0 17 16" class="bi bi-exclamation-triangle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">  
+                
+                        <path fill-rule="evenodd" d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 5zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                    
+                        </svg>
+                    
+                        </center>
+
+                    </div>
+
+              <div class="col-sm-6">
+
+                <div id = "alert" class = "container">
+
+                    <div class="container">
+
+                        <div class="row">
+
+                          <div class="col-sm">
+
+                            <br>
+
+                            <br>
+
+                            <!-- Espacio para la alerta notificadora de las acciones en la base de datos -->
+        
+                            --alert--
+
+                          </div>
+
+                      </div>
+
+                    <br>
+        
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Distribución de columnas para el ingreso de los insumos -->
+
+        <div class = "form-group">
+
+            <div class="row">
+
+              <div class="col-sm">
+
+                <div class = "container p-3 my-3 text-dark" style = "background-color: #ffffffdc;">
+                    
+                    <!-- Entrada de un cajón de texto para el nombre del insumo -->
+        
+                    <div class>
+
+                        <p><strong>Nombre del examen</strong></p>
+
+                        <input type = "text" size="100" maxlength="100" class = "form-control text-light" style = "background-color: #000000d0;" id = "nombreexamen" name = "nombreexamen" placeholder = "Ingresa solo texto" required>
+
+                    </div>
+        
+                </div>
+
+              </div>
+
+              <div class="col-sm">
+
+                <div class = "container p-3 my-3 text-dark" style = "background-color: #ffffffdc;">
+                    
+                    <!-- Entrada de un cajón de selección para el estado -->
+        
+                    <div>
+                        
+                      <p><strong>Tipo de examen al que pertenece</strong></p>
+              
+                      <select class="form-control text-light" style = "background-color: #000000d0;" id = "tipoexamen" name = "tipoexamen" required>
+              
+                        <option value = "" class = "bg-dark" selected disabled>Selecciona...</option>
+
+                        <option value = "" class = "bg-dark" disabled>Examenes de química clínica</option>
+
+                        <option value = "Glucosa" class = "bg-warning text-dark">Glucosa</option>
+
+                        <option value = "Perfil de lípidos" class = "bg-warning text-dark">Perfil de lípidos</option>
+
+                        <option value = "E.S." class = "bg-warning text-dark">E.S.</option>
+
+                        <option value = "E.S. II" class = "bg-warning text-dark">E.S. II</option>
+
+                        <option value = "Proteínas totales" class = "bg-warning text-dark">Proteínas totales</option>
+
+                        <option value = "Perfil pancreático" class = "bg-warning text-dark">Perfil pancreático</option>
+
+                        <option value = "Perfil cardiaco" class = "bg-warning text-dark">Perfil cardiaco</option>
+
+                        <option value = "Albumina" class = "bg-warning text-dark">Albumina</option>
+
+                        <option value = "Fosfata ácida" class = "bg-warning text-dark">Fosfata ácida</option>
+
+                        <option value = "Gasometría arterial" class = "bg-warning text-dark">Gasometría arterial</option>
+
+                        <option value = "Gasometría venosa" class = "bg-warning text-dark">Gasometría venosa</option>
+
+                        <option value = "Tolerancia a glucosa" class = "bg-warning text-dark">Tolerancia a glucosa</option>
+
+                        <option value = "Hemoglobina glucosilada" class = "bg-warning text-dark">Hemoglobina glucosilada</option>
+              
+                        <option value = "Electrolitos urinarios" class = "bg-warning text-dark">Electrolitos urinarios</option>
+              
+                        <option value = "Calcio en orina" class = "bg-warning text-dark">Calcio en orina</option>
+              
+                        <option value = "Depuración de creatinina" class = "bg-warning text-dark">Depuración de creatinina</option>
+                        
+                        <option value = "Amilasa en orina" class = "bg-warning text-dark">Amilasa en orina</option>
+
+                        <option value = "General de orina" class = "bg-dark" disabled>Examenes de Urología/Parasitología</option>
+
+                        <option value = "Proteína de Bence Jones" class = "bg-success">Proteína de Bence Jones</option>
+
+                        <option value = "Citología fecal" class = "bg-success">Citología fecal</option>
+
+                        <option value = "Azucares reductores" class = "bg-success">Azucares reductores</option>
+
+                        <option value = "Coproparasitoscopio" class = "bg-success">Coproparasitoscopio</option>
+
+                        <option value = "Sangre oculta en heces" class = "bg-success">Sangre oculta en heces</option>
+
+                        <option value = "Examen coprológico" class = "bg-success">Examen coprológico</option>
+
+                        <option value = "" class = "bg-dark" disabled>Examenes de Microbiología</option>
+
+                        <option value = "Coprocultivo con antibiograma" class = "bg-primary">Coprocultivo con antibiograma</option>
+
+                        <option value = "Cultivo de expectoración" class = "bg-primary">Cultivo de expectoración</option>
+
+                        <option value = "Exudado faringeo" class = "bg-primary">Exudado faringeo</option>
+
+                        <option value = "Exudado nasal" class = "bg-primary">Exudado nasal</option>
+
+                        <option value = "Exudado uretal" class = "bg-primary">Exudado uretal</option>
+
+                        <option value = "Hemocultivo" class = "bg-primary">Hemocultivo</option>
+
+                        <option value = "Cultivo LCR" class = "bg-primary">Cultivo LCR</option>
+
+                        <option value = "Cultivo de líquido de diálisis" class = "bg-primary">Cultivo de líquido de diálisis</option>
+
+                        <option value = "Cultivo de Líquido Pleural" class = "bg-primary">Cultivo de Líquido Pleural</option>
+
+                        <option value = "Urocultivo" class = "bg-primary">Urocultivo</option>
+
+                        <option value = "" class = "bg-dark" disabled>Examenes de Serología</option>
+
+                        <option value = "VDLR" class = "bg-danger">VDLR</option>
+
+                        <option value = "VIH" class = "bg-danger">VIH</option>
+
+                        <option value = "AG PORSTÁTICO (PSA)" class = "bg-danger">AG PORSTÁTICO (PSA)</option>
+
+                        <option value = "Antiestreptolisinas" class = "bg-danger">Antiestreptolisinas</option>
+
+                        <option value = "Factor Reumatoide" class = "bg-danger">Urocultivo</option>
+
+                        <option value = "Proteína C reactiva" class = "bg-danger">Proteína C reactiva</option>
+
+                        <option value = "Reacciones febriles" class = "bg-danger">Reacciones febriles</option>
+
+                        <option value = "Prueba embarazo (Sanguínea)" class = "bg-danger">Prueba embarazo (Sanguínea)</option>
+              
+                      </select>
+                    
+                      </div>
+        
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-sm">
+
+                <div class = "container p-3 my-3 text-dark" style = "background-color: #ffffffdc;">
+                    
+                    <!-- Entrada de un cajón de texto para la descripción del insumo -->
+        
+                    <div class>
+
+                        <p><strong>Introduce el precio del exámen ($)</strong></p>
+
+                        <input size="10" maxlength="10" type = "number" step="0.01" class = "form-control text-light" style = "background-color: #000000d0;" id = "costoexamen" name = "costoexamen" placeholder = "Ingresa un número" required>
+
+                    </div>
+        
+                </div>
+
+              </div>
+
+              <div class="col-sm">
+
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-sm">
+
+              </div>
+
+              <div class="col-sm">
+
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-sm">
+
+              </div>
+
+              </div>
+
+            </div>
+
+          </div>
+          
+        <!-- Grupo de botones -->
+
+        <center><div class = "container text-white" style = "background-color: rgba(255, 255, 255, 0);">
+
+          <br>
+
+    <br>
+            
+            <div class="row">
+
+              <div class="col">
+                
+                <button href = "addinsumos.php" type="submit" name = "add" title = "Ingresa los datos requeridos y añade un nuevo insumo." class="btn btn-primary">Agregar nuevo registro <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    
+                    <path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                  
+                </svg>
+                
+                </button>
+
+              </div>
+
+              <div class="col-md">
+
+                <a class="btn btn-dark" type = "submit" title = "Reinicia los campos si quieres empezar de nuevo.">Reiniciar campos <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    
+                    <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                  
+                </svg> </a>
+
+              </div>
+
+            </div>
+
+            <br>
+
+        </div></center>
+
+        <br>
+
+    <br>
+
+    </form>
+ 
+  </div>
+
+</div>
+
+<br>
+
+<br>
+
+    <footer class="site-footer">
+
+      <div class="container">
+  
+        <div class="row">
+  
+          <div class="col-sm-12 col-md-6">
+  
+            <h6><strong>ACERCA DE...</strong></h6>
+  
+            <p class="text-justify">Sistema designado al mantenimiento y control de una clínica especializada en la realización de laboratorios.</p>
+          
+            <p class="text-justify">Versión 2.3</p>
+          
+          </div>
+  
+          <div class="col-xs-6 col-md-3">
+  
+          </div>
+  
+          <div class="col-xs-6 col-md-3">
+  
+            <h6><strong>¿NECESITAS AYUDA?</strong></h6>
+  
+            <ul class="footer-links">
+  
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              
+              </svg> 7756-5656 (Regencia)</a></li>
+  
+             <br>
+  
+              <li><a href="../Clinica_Control/condiciones.html">  Condiciones de uso        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-fill" viewBox="0 0 16 16">
+                
+                <path d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+              
+              </svg></a></li>
+  
+              <br>
+  
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+  
+              </svg>  Calle Juan José Cañas entre Calle #85 y #83 de la Av. Sur #421</a></li>
+  
+            </ul>
+  
+          </div>
+  
+        </div>
+  
+        <hr>
+  
+      </div>
+  
+      <div class="container">
+  
+        <div class="row">
+  
+          <div class="col-md-8 col-sm-6 col-xs-12">
+  
+            <p class="copyright-text"><h6><strong>DERECHOS RESERVADOS</strong></h6>
+  
+              <h6><strong>NELTECH ©2021</strong></h6>
+  
+            </p>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+  </footer>
+   
+<!-- Final del formulario para un nuevo registro de categoría -->
+
+
+<!-- Integración de librerías de JavaScript (JQuery y JPopper) -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.js"></script>
+
+<!-- Mensaje de bienvenida (bienvenida.js) -->
+
+<!-- <script src="Assets/JS/bienvenida.js"></script> -->
+    
+</html>
+
+<!-- Final de la estructura de la página web de ingreso de datos -->

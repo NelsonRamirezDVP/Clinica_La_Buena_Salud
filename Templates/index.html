@@ -1,0 +1,366 @@
+<!-- Estructura HTML para el inicio de sesión del sistema de control de inventarios y de nómina de empleados de la clínica de laboratorios. -->
+
+<!-- Versión 1.0 (Prototipo) -->
+
+<!-- Desarrollado Tech Solutions(R) 2021(C) (Proyecto dirigido por Nelson Alexander Brizuela Ramírez) -->
+
+
+<!-- Archivo de plantilla de area de trabajo posterior al inicio de sesión (Versión de archivo 1.0) -->
+
+<!DOCTYPE html>
+
+<html lang = "es">
+
+<!-- Inicio de la estructura web -->
+
+<head>
+
+  <meta charset = "UTF-8">
+
+  <meta name = "description" content = "Inicio de sesión para el control de inventarios y de nómina de empleados de la Farmacia Saint John S.A. de C.V."/>
+
+  <meta name ="Farmacia Saint John (Versión 1)" content = "Plantilla de inicio de sesión">
+
+  <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+  <!-- Integración de Bootstrap (Framework Front End) -->
+
+  <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- Integración de hoja de estilos personalizada (CSS III) -->
+    
+  <link rel = "stylesheet" href = "Assets/CSS/fsjstyle.css">
+
+  <!-- Integración de icono (Favicon) -->
+
+  <link rel = "shortcut icon" href = "Assets/Icons/icon.png">
+    
+  <title>¡Bienvenido!</title>
+	
+</head>
+
+<!-- Cuerpo de la página web -->
+
+<body>
+
+
+<!-- Inicio de la barra de navegación simple para la página de inicio de sesión -->
+
+<nav id = "nav" class="navbar sticky-top navbar-dark text-dark" style = "background-color: rgb(255, 255, 255)">
+
+  <nav id = "nav" class="navbar sticky-top navbar-dark text-dark">
+
+    <a class = "navbar-brand" href = "login.html">
+
+      <img src = "Assets/Images/cross.png" width = "60" height = "60">
+  
+    </a>
+  
+    <h1 id = "logo">Clínica La Buena Salud</h1>
+
+    <div class = "row text-primary">                                                                                              
+        
+    </div>  
+                                                                             
+
+    <!-- Botón que redirecciona a la página de inicio tras iniciar sesión y muestra el nombre del usuario en sesión actual -->
+
+    <button class = "btn btn-outline-dark col-sm" type = "button" href = "index.php">
+
+    --nombreusuario-- 
+
+    <svg width = "1.50em" height = "1.50em" viewBox = "0 0 16 16" class = "bi bi-person-circle" fill = "currentColor" xmlns = "http://www.w3.org/2000/svg">
+        
+    <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+        
+    <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        
+    <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+
+    </svg>
+
+  </button>
+
+    <!-- Botón para mostrar más opciones (Estado, tipo de usuario y botón de cierre de sesión) -->
+       
+    <button class="btn btn-outline-dark" type = "button" data-toggle = "collapse" data-target = "#navbarsExample01" aria-controls = "navbarsExample01" aria-expanded="true" aria-label="Alternar la navegación" _mstaria-label="492479">
+
+      <svg width="1.50em" height = "1.50em" viewBox ="0 0 16 16" class = "bi bi-grid-3x2-gap-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            
+      <path d="M1 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V4zM1 9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V9z"/>
+
+      </svg>
+
+      </button>
+
+      <div class="navbar-collapse collapse text-dark" id = "navbarsExample01" _mstvisible = "0">
+
+        <ul class="navbar-nav mr-auto text-dark" _mstvisibl e = "1">
+
+          <li class="nav-item active text-dark" _mstvisible="2">
+
+          <br>
+
+        </li>
+
+        <!-- Lista de opciones e indicadores disponibles al realizar un acceso exitoso -->
+
+        <!-- Nombre completo del usuario en sesión -->
+
+        <li class = "nav-item" _mstvisible = "2">
+
+          <strong><a class = "nav-link active text-dark" href = "#" _msthash="699270" _msttexthash = "227084" _mstvisible = "3">¡Hola de nuevo --nombreusuario--!</a>
+
+          <!-- Usuario de la sesión actual -->
+
+        <li class="nav-item" _mstvisible="2"></strong>
+
+        <strong><a id = "dato" class="nav-link disabled text-dark" href="#" _msthash="699270" _msttexthash="227084" _mstvisible="3">--usuario-- <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                
+          <path fill-rule="evenodd" d="M12 1H4a1 1 0 0 0-1 1v10.755S4 11 8 11s5 1.755 5 1.755V2a1 1 0 0 0-1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                
+          <path fill-rule="evenodd" d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              
+          </svg></strong>
+
+          <!-- Tipo de usuario de la sesión actual -->
+
+          <li class = "nav-item text-dark" _mstvisible="2">
+
+          <a id = "dato" class = "nav-link disabled text-dark" _msthash = "699270" _msttexthash = "227084" _mstvisible = "3">--tipousuario--</a>
+
+          <!-- Estado actual de la sesión -->
+
+          <li class="nav-item" _mstvisible="2">
+
+          <a id = "dato" class="nav-link disabled text-dark"  _msthash="699270" _msttexthash="227084" _mstvisible="3">--estado-- <svg width="1em" height="1em" viewBox="0 0 0 0" class="bi bi-exclamation-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              
+            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+              
+            <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+            
+          </svg></a>
+      
+          </li>
+
+          <li class="nav-item active" _mstvisible="2">
+
+          <br>
+
+          </li>
+
+
+          <!-- Opciones de administración -->
+        
+          <li class="nav-item dropdown text-dark" _mstvisible="2">
+
+          <a class="nav-link dropdown-toggle text-dark" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" _msthash="139802" _msttexthash="174863" _mstvisible="3">Opciones administrativas</a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdown01" _mstvisible="3">
+
+            --opcion1--
+
+            --opcion2--
+
+            --opcion3--
+
+            --opcion4--
+
+            --opcion5--
+            
+          </div>
+
+        </li>
+
+        <br>
+
+
+        <!-- Botón de cierre de sesión -->
+
+        <li class="nav-item active" _mstvisible="2">
+
+          <form class = "logout" action="login.html?acc=salir" method="POST">
+
+            <button name = "salir" value = "salir" class="btn btn-danger" type = "submit" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="true" aria-label="Alternar la navegación" _mstaria-label="492479">
+        
+              Cerrar sesión
+        
+            </button>
+
+          </form>
+          
+        </li>
+
+        <br>
+
+        ¡Cuidando la salud de la población salvadoreña!
+
+        <br>
+
+    </div>
+
+    <br>
+
+</nav>
+
+</nav>
+
+<!-- Encabezado de la página web -->
+
+<br>
+
+<br>
+
+<br>
+
+<header><center>
+
+  <div id = "header" class = "container" style = "background-color: rgba(255, 255, 255, 0.801);">
+
+    <br>
+
+    <div id = "middle" class = "container">
+
+      <br>
+
+      <h1><strong>¡Bienvenido --cargo--!</strong></h1>
+
+      <br>
+
+      <h5>Accede a la barra de navegación superior y busca las opciones administrativas disponibles para ti.</h5>
+
+      <br>
+
+      <h5><strong>--name--</strong></h5>
+
+      <br>
+
+      <h6><strong>DERECHOS RESERVADOS</h6>
+
+        <h6>--year--</strong></h6>
+
+      <br>
+
+    </div>
+
+    <br>
+    
+  </div>
+
+</header></center>
+
+<br>
+
+<br>
+
+<br>
+
+</body>
+
+<!-- Final del cuerpo de la página -->
+
+<!-- Contenedor de pié para el servicio web (Footer informativo y de enlaces) -->
+
+<footer class="site-footer">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6">
+
+        <h6><strong>ACERCA DE...</strong></h6>
+
+        <p class="text-justify">Sistema designado al mantenimiento y control de una clínica especializada en la realización de laboratorios.</p>
+      
+        <p class="text-justify">Versión 2.3</p>
+      
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+
+        <h6><strong>¿NECESITAS AYUDA?</strong></h6>
+
+        <ul class="footer-links">
+
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          
+          </svg> 7756-5656 (Regencia)</a></li>
+
+         <br>
+
+          <li><a href="../Clinica_Control/condiciones.html">  Condiciones de uso        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-fill" viewBox="0 0 16 16">
+            
+            <path d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+          
+          </svg></a></li>
+
+          <br>
+
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+
+          </svg>  Calle Juan José Cañas entre Calle #85 y #83 de la Av. Sur #421</a></li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <hr>
+
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-8 col-sm-6 col-xs-12">
+
+        <p class="copyright-text"><h6><strong>DERECHOS RESERVADOS</strong></h6>
+
+          <h6><strong>NELTECH ©2021</strong></h6>
+
+        </p>
+
+      </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+</div>
+
+<!-- Final del cuerpo de la página -->
+
+
+<!-- Integración de librerías de JavaScript (JQuery y JPopper, JSSHA512 para encriptación y JValidation para validación de campos) -->
+
+<script src = "https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<script src = "https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.js"></script>
+
+<script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.js"></script>
+
+<script src = https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/additional-methods.js></script>
+
+<script src = https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js></script>
+ 
+<script src = "Assets/JS/sha512.js" type = "text/javascript"></script>
+    
+</html>
+
+<!-- Final de la estructura de la página web de proceso de datos -->

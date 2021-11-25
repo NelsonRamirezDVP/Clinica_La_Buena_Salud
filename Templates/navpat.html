@@ -1,0 +1,95 @@
+<!-- Barra de navegación para el control de pacientes del laboratorio -->
+
+<!-- El presente programa ha sido realizado bajo el patrón de diseño estructural para realizar un mantenimiento (inserción, eliminación, comsulta y actualización de datos) a una tabla dentro de una base de datos, en específico a la tabla Categoria en la base de datos "empresa" -->
+
+<!-- Desarrollado por Nelson Alexander Brizuela Ramírez (BR100718) -->
+
+<!-- Archivo de plantilla de la barra de navegación (Versión de archivo 1.0) -->
+
+
+<!-- Inicio de la barra de navegación simple para la página de inicio de sesión -->
+
+<nav id = "nav" class="navbar sticky-top navbar-light" style = "background-color: rgb(255, 255, 255)">
+
+  <nav id = "nav" class="navbar sticky-top navbar-light">
+
+    <a class = "navbar-brand" href = "index.php">
+
+      <img src = "Assets/Images/cross.png" width = "60" height = "60">
+  
+    </a>
+  
+    <h1 id = "logo">Clínica La Buena Salud</h1>
+
+    <div class = "row text-primary">                                                                                                                                        
+        
+    </div>  
+                                                                         
+
+  </button>
+
+    <!-- Botón para mostrar más opciones (Estado, tipo de usuario y botón de cierre de sesión) -->
+       
+    <button class="btn btn-outline-dark" type = "button" data-toggle = "collapse" data-target = "#navbarsExample01" aria-controls = "navbarsExample01" aria-expanded="true" aria-label="Alternar la navegación" _mstaria-label="492479">
+
+      <svg width="1.50em" height = "1.50em" viewBox ="0 0 16 16" class = "bi bi-grid-3x2-gap-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            
+      <path d="M1 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V4zM1 9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V9z"/>
+
+      </svg>
+
+      </button>
+
+      <div class="navbar-collapse collapse" id = "navbarsExample01" _mstvisible = "0">
+
+        <ul class="navbar-nav mr-auto" _mstvisibl e = "1">
+
+          <li class="nav-item active" _mstvisible="2">
+
+          <br>
+
+          <li class = "nav-item active" _mstvisible="2">
+
+            <a class = "btn btn-danger" title = "Puedes cerrar tu sesión." onclick="return confirm('Estás a punto de cerrar sesión. ¿Deseas salir?')" href = "login.html" id = "sub1" _mstvisible = "3"><font _mstmutation = "1" _msthash = "698438" _msttexthash = "42250" _mstvisible = "4">Cerrar sesión</font><span class = "sr-only" _msthash = "1018758" _msttexthash = "97968" _mstvisible = "4"></span></a>    
+            
+             
+
+            <a class = "btn btn-primary" title = "Ve a la página de inicio." onclick="return confirm('Regresaras a tu inicio. ¿Estás seguro?')" href = "index.php" id = "sub2" _mstvisible = "3"><font _mstmutation = "1" _msthash = "698438" _msttexthash = "42250" _mstvisible = "4"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+              
+              <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+            
+            </svg></strong></font><span class = "sr-only" _msthash = "1018758" _msttexthash = "97968" _mstvisible = "4">(actual)</span></a>
+          
+          </li>
+
+          <br>
+  
+          <!-- Botón de acciones de control de datos desplegable -->
+          
+          <li class = "nav-item dropdown " _mstvisible = "2" id = "sub1">
+  
+            <a class = "nav-link dropdown-toggle" href= "#" id = "navbar" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false" _msthash= "139802" _msttexthash= "174863" _mstvisible = "3">Acciones para los pacientes</a>
+            
+            <div class="dropdown-menu" aria-labelledby="dropdown01" _mstvisible="3" id = "sub1">
+  
+            --actions--
+  
+            </div>
+          
+          </li>
+
+        <br>
+
+        ¡Cuidando la salud de la población salvadoreña!
+
+        <br>
+
+    </div>
+
+    <br>
+
+</nav>
+
+</nav>
+
+<!-- Final de la barra de navegación -->
